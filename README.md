@@ -103,7 +103,7 @@ java -cp target/data-flush-1.0-SNAPSHOT-jar-with-dependencies.jar com.dataflush.
   -st "2023-01-01 00:00:00" -et "2023-01-01 12:00:00"
 
 # 指定数据库和表过滤
-java -cp target/data-flush-1.0-SNAPSHOT-jar-with-dependencies.jar com.dataflush.BinlogPositionFinder \
+java -cp target/data-flush-1.0-SNAPSHOT-jar-with-dependencies.jar com.dataflush.BinlogRollbackTool \
   -h localhost -u root -p password \
   -st "2023-01-01 00:00:00" -d mydb -t users,orders
 ```
